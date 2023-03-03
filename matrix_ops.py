@@ -107,22 +107,3 @@ def inverse(
     det = determinant(arr)
     lst = [[a[iti][j]/det for j in range(len(a[0]))]for iti in range(len(a))]
     return lst
-
-
-if __name__ == "__main__":
-    m = int(input("number of rows"))
-    n = int(input("number of columns"))
-    li = list()
-    for i in range(m):
-        d = list(map(int, input("Enter numbers").split()))
-        li.append(d)
-    li2 = list()
-    for i in range(m):
-        d = list(map(int, input("Enter numbers").split()))
-        li2.append(d)
-    print(addition_of_matrices(li, li2))
-# print(inverse(l))
-
-# print(transpose(cofactor(l)))
-
-# print(determinant(l))
